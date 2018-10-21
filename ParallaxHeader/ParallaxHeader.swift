@@ -160,6 +160,15 @@ public class ParallaxHeader: NSObject {
             layoutContentView()
         }
     }
+	
+	/**
+	The ability of the header to move its own position horizontally with the contents x offset of the scrollView and thereby simulate a static header.
+	*/
+	public var isStaticHorizontally: Bool = false {
+		didSet {
+			layoutContentView()
+		}
+	}
     
     /**
      The header's minimum height while scrolling up. 0 by default.
@@ -440,7 +449,7 @@ public class ParallaxHeader: NSObject {
         let relativeHeight = -relativeYOffset
         
         let frame = CGRect(
-            x: 0,
+			x: isStaticHorizontally ? scrollView.contentOffset.x : 0,
             y: relativeYOffset,
             width: scrollView.frame.size.width,
             height: max(relativeHeight, minimumHeight)
