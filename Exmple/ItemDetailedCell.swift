@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Reusable
 
 class ItemDetailedCell: UICollectionViewCell, Reusable {
     

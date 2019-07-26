@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Reusable
 
 typealias ItemDetailedHeaderClickHandler = (_ item: IndexPath, _ image: UIImage, _ cell: ItemDetailedCell)->Void
 
