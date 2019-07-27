@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		11EA544722EBA327002FE1A4 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA544022EBA326002FE1A4 /* Reusable.swift */; };
 		11EA544822EBA327002FE1A4 /* UITableView+Dequeueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA544122EBA326002FE1A4 /* UITableView+Dequeueable.swift */; };
-		11EA544922EBA327002FE1A4 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA544222EBA326002FE1A4 /* NibLoadableView.swift */; };
 		11EA544A22EBA327002FE1A4 /* BaseTableHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA544422EBA327002FE1A4 /* BaseTableHeaderFooterView.swift */; };
 		11EA544B22EBA327002FE1A4 /* UINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA544522EBA327002FE1A4 /* UINib.swift */; };
 		11EA544C22EBA327002FE1A4 /* UICollectionView+Dequeueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA544622EBA327002FE1A4 /* UICollectionView+Dequeueable.swift */; };
+		11EA547B22EC238D002FE1A4 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA547A22EC238D002FE1A4 /* NibLoadableView.swift */; };
 		837AA184E2E3DE5C748CAC1F /* Pods_Exmple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC7EB16BC67AB233D49ED31 /* Pods_Exmple.framework */; };
 		B50695821F02653C00078D26 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50695811F02653C00078D26 /* CollectionVC.swift */; };
 		B50695861F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50695851F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift */; };
@@ -86,10 +86,10 @@
 /* Begin PBXFileReference section */
 		11EA544022EBA326002FE1A4 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		11EA544122EBA326002FE1A4 /* UITableView+Dequeueable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueable.swift"; sourceTree = "<group>"; };
-		11EA544222EBA326002FE1A4 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		11EA544422EBA327002FE1A4 /* BaseTableHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableHeaderFooterView.swift; sourceTree = "<group>"; };
 		11EA544522EBA327002FE1A4 /* UINib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINib.swift; sourceTree = "<group>"; };
 		11EA544622EBA327002FE1A4 /* UICollectionView+Dequeueable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeueable.swift"; sourceTree = "<group>"; };
+		11EA547A22EC238D002FE1A4 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		1FC7EB16BC67AB233D49ED31 /* Pods_Exmple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exmple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B06A3E751B67D1014A166B7 /* Pods-Exmple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exmple.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exmple/Pods-Exmple.release.xcconfig"; sourceTree = "<group>"; };
 		6DDAF7BF299B929D4B26D0C7 /* Pods-Exmple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exmple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exmple/Pods-Exmple.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 		11EA543F22EBA311002FE1A4 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				11EA547A22EC238D002FE1A4 /* NibLoadableView.swift */,
 				11EA544422EBA327002FE1A4 /* BaseTableHeaderFooterView.swift */,
-				11EA544222EBA326002FE1A4 /* NibLoadableView.swift */,
 				11EA544022EBA326002FE1A4 /* Reusable.swift */,
 				11EA544622EBA327002FE1A4 /* UICollectionView+Dequeueable.swift */,
 				11EA544522EBA327002FE1A4 /* UINib.swift */,
@@ -609,11 +609,11 @@
 				11EA544722EBA327002FE1A4 /* Reusable.swift in Sources */,
 				11EA544A22EBA327002FE1A4 /* BaseTableHeaderFooterView.swift in Sources */,
 				B5B4488C1F0AD24C009FC4DA /* BlurRoundIconParallaxVC.swift in Sources */,
-				11EA544922EBA327002FE1A4 /* NibLoadableView.swift in Sources */,
 				B50695861F02674C00078D26 /* ItemDetailedHeaderDataSourse.swift in Sources */,
 				B5DB07041F02D20F00DD1D43 /* ParallaxVC.swift in Sources */,
 				B50695881F0267D700078D26 /* ItemDetailedImagesDataSourse.swift in Sources */,
 				B5CCB7B01EFD0F2300194CFB /* BlurParallaxVC.swift in Sources */,
+				11EA547B22EC238D002FE1A4 /* NibLoadableView.swift in Sources */,
 				B5CCB7AE1EFD0F2300194CFB /* AppDelegate.swift in Sources */,
 				11EA544C22EBA327002FE1A4 /* UICollectionView+Dequeueable.swift in Sources */,
 				11EA544822EBA327002FE1A4 /* UITableView+Dequeueable.swift in Sources */,
